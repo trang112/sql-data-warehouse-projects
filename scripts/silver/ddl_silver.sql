@@ -1,6 +1,7 @@
+
 /*
 =====================================================
-DDL Script: create silver tables
+DDL Script: create silver tables (ngôn ngữ định nghĩa dữ liệu)
 =====================================================
 Script purpose: 
   This script creates tables in the 'silver' schema, dropping existing tables if they already exist
