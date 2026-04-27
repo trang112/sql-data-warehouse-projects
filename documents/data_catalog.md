@@ -32,3 +32,19 @@
 | cost  | INT | The cost or base price of the product, measured in monetary units|
 | product_line  | nvarchar(50) | The specific product line or series to which product belongs (e.g Road, Mountain,..)|
 | start_date   | date       |the date when the product became available for sale or use, stored in   |
+
+## 3.gold.fact_sales
+- Purpose: stores transactional sales data for analytical purposes
+- Columns:
+
+| Column Name   | Data Type     | Description                                                                     |
+| ------------- | ------------- | --------------------------------------------------------------------------------|    
+| order_number | nvarchar(50) | A unique alphanumeric identifier for each sales order (e.g SO54496|
+| product_key  | INT | surrogate key uniquely identifying each product record in the dimension table. | 
+| customer_key  | INT           | surrogate key uniquely identifying each customer record in the dimention table. | 
+| order_date  | date | The date when the order was placed |
+| shipping_date  | date | The date when the order was shipped to the customer |
+| due_date  | date | The date when the order payment was due |
+|sales_amount  |int| The total monetary value of the sale for the line item, in whole currency unit (e.g 25)|
+|quantity  |int| The number of units of the product ordered for the line item|
+|price  |int| The price per unit of the product for the line item, in whole currency units|
